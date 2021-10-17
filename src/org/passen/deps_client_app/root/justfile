@@ -1,0 +1,33 @@
+build := "{{artifact/id}}"
+
+default:
+	@just --list
+
+release: release-cljs release-css
+
+release-cljs:
+	@npx shadow-cljs release {{build}}
+
+watch-cljs:
+	@npx shadow-cljs watch {{build}}
+
+clean:
+	@rm -rf public/static/js
+	@rm -rf public/static/css
+
+lint:
+	@clj-kondo --parallel --lint src
+
+watch-css:
+	@clojure -X:girouette-processor :watch? true
+
+release-css:
+	@clojure -X:girouette-processor
+	@npx postcss -r public/static/css/main.css
+
+build-report:
+	@npx shadow-cljs run shadow.cljs.build-report {{build}} report.html
+
+test:
+	@npx shadow-cljs compile ci
+	@npx karma start --single-run

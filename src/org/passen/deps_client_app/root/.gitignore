@@ -1,0 +1,15 @@
+# -*- mode: gitignore; -*-
+
+*~
+\#*\#
+
+.shadow-cljs/
+node_modules/
+.nrepl-port
+report.html
+
+public/static/js/cljs-runtime
+public/static/js/manifest.edn
+.clj-kondo/.cache/
+.cpcache/
+/target/

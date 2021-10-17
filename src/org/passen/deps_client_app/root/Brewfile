@@ -1,0 +1,15 @@
+tap "borkdude/brew"
+tap "clojure/tools"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+
+brew "editorconfig"
+brew "just"
+brew "node"
+
+brew "borkdude/brew/clj-kondo"
+brew "clojure/tools/clojure"
+
+cask "temurin11"

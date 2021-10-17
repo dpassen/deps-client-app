@@ -1,0 +1,27 @@
+{
+  "name": "{{artifact/id}}",
+  "version": "1.0.0",
+  "description": "{{description}}",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "{{developer}}",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "cssnano": "^5.0.8",
+    "jsdom": "^18.0.0",
+    "karma": "^6.3.4",
+    "karma-cljs-test": "^0.1.0",
+    "karma-jsdom-launcher": "^11.0.0",
+    "postcss-cli": "^9.0.1",
+    "shadow-cljs": "^2.15.12"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-refresh": "^0.10.0"
+  }
+}
