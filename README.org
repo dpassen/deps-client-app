@@ -2,12 +2,8 @@
 * deps-client-app
 A [[https://github.com/seancorfield/deps-new][deps-new]] template for generating client applications
 ** Usage
-1. Add an alias to your =~/.clojure/deps.edn= for deps-new.
-2. Clone this repository locally
+1. Install [[https://github.com/seancorfield/deps-new#deps-new-][deps-new]]
+2. Create an app based on this template
    #+BEGIN_SRC sh
-   $ git clone git@github.com:dpassen/deps-client-app.git
-   #+END_SRC
-3. Create an app based on this template
-   #+BEGIN_SRC sh
-   $ clj -Sdeps '{:deps {org.passen/deps-client-app {:local/root "deps-client-app"}}}' -X:new :template org.passen/deps-client-app :name org/app-name
+   $ clj -Sdeps '{:deps {io.github.dpassen/deps-client-app {:git/tag "v0.1.0" :git/sha "666d6ad"}}}' -X:new :template org.passen/deps-client-app :name org/app-name
    #+END_SRC
