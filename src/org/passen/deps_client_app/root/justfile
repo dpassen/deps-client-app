@@ -31,3 +31,6 @@ build-report:
 test:
 	@npx shadow-cljs compile ci
 	@npx karma start --single-run
+
+preview: release
+	@npx http-server
