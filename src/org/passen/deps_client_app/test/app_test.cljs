@@ -11,4 +11,4 @@
 (deftest App
   (testing "that we can render the app"
     (let [element (react-testing-library/render ($ app/App))]
-      (is (some? (oops/ocall element :queryByText "boof"))))))
+      (is (some? (oops/ocall element :queryByText "{{artifact/id}}"))))))
