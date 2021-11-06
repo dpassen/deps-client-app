@@ -3,11 +3,11 @@
  {binaryage/devtools  {:mvn/version "1.0.4"}
   binaryage/oops      {:mvn/version "0.7.1"}
   girouette/girouette {:mvn/version "0.0.5"}
-  lilactown/helix     {:mvn/version "0.1.3"}}
+  lilactown/helix     {:mvn/version "0.1.4"}}
  :aliases
  {:cljs
   {:extra-deps
-   {thheller/shadow-cljs {:mvn/version "2.15.12"}}}
+   {thheller/shadow-cljs {:mvn/version "2.16.0"}}}
   :girouette-processor
   {:extra-deps
    {girouette/processor {:mvn/version "0.0.5"}}
