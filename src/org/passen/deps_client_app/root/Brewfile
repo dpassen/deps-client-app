@@ -7,7 +7,7 @@ tap "homebrew/core"
 
 brew "editorconfig"
 brew "just"
-brew "node"
+brew "volta"
 
 brew "borkdude/brew/clj-kondo"
 brew "clojure/tools/clojure"
