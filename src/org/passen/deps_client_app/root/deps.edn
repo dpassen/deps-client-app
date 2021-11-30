@@ -2,7 +2,7 @@
  :deps
  {binaryage/devtools  {:mvn/version "1.0.4"}
   binaryage/oops      {:mvn/version "0.7.1"}
-  girouette/girouette {:mvn/version "0.0.5"}
+  girouette/girouette {:mvn/version "0.0.6"}
   lilactown/helix     {:mvn/version "0.1.5"}}
  :aliases
  {:cljs
