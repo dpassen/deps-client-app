@@ -1,5 +1,6 @@
 (ns {{raw-name/ns}}.app
   (:require
+   [girouette.core :refer [css]]
    [helix.core :refer [defnc $]]
    [helix.dom :as dom]
    ["react" :as react]
@@ -8,7 +9,9 @@
 (defnc App
   []
   ($ react/StrictMode
-     (dom/div "{{artifact/id}}")))
+     (dom/div
+      {:class (css "text-4xl")}
+      "{{artifact/id}}")))
 
 (defn start
   []
