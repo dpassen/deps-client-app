@@ -16,7 +16,7 @@ clean:
 	@rm -rf public/static/css
 
 lint:
-	@clj-kondo --parallel --lint src
+	@clj-kondo --parallel --lint src test
 
 watch-css:
 	@clojure -X:girouette-processor :watch? true
