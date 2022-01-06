@@ -19,6 +19,7 @@
    ($ App)
    (js/document.getElementById "{{artifact/id}}")))
 
+#_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (defn init
   []
   (start))
