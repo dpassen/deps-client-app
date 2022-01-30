@@ -12,8 +12,8 @@ watch-cljs:
 	@npx shadow-cljs watch {{build}}
 
 clean:
-	@rm -rf public/static/js
-	@rm -rf public/static/css
+	@-rm -rf public/static/js
+	@-rm -rf public/static/css
 
 lint:
 	@clj-kondo --parallel --lint src test
