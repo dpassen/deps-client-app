@@ -2,7 +2,7 @@
  :deps
  {binaryage/devtools  {:mvn/version "1.0.4"}
   binaryage/oops      {:mvn/version "0.7.1"}
-  girouette/girouette {:mvn/version "0.0.6"}
+  girouette/girouette {:mvn/version "0.0.7"}
   lilactown/helix     {:mvn/version "0.1.5"}}
  :aliases
  {:cljs
@@ -10,7 +10,7 @@
    {thheller/shadow-cljs {:mvn/version "2.16.12"}}}
   :girouette-processor
   {:extra-deps
-   {girouette/processor {:mvn/version "0.0.5"}}
+   {girouette/processor {:mvn/version "0.0.7"}}
    :ns-default girouette.processor
    :exec-fn    process
    :exec-args
