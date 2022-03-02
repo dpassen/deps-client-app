@@ -1,6 +1,6 @@
 {:paths ["src" "test"]
  :deps
- {binaryage/devtools  {:mvn/version "1.0.4"}
+ {binaryage/devtools  {:mvn/version "1.0.5"}
   binaryage/oops      {:mvn/version "0.7.1"}
   girouette/girouette {:mvn/version "0.0.7"}
   lilactown/helix     {:mvn/version "0.1.5"}}
