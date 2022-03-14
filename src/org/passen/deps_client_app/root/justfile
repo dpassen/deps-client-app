@@ -36,4 +36,4 @@ preview: release
 	@npx http-server
 
 watch:
-	@parallel -j2 --tag --lb just ::: watch-cljs watch-css
+	@parallel -j2 --ctag --tag --lb just ::: watch-cljs watch-css
