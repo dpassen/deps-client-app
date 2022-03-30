@@ -4,7 +4,7 @@
    [helix.core :refer [defnc $]]
    [helix.dom :as dom]
    ["react" :as react]
-   ["react-dom" :as react-dom]))
+   ["react-dom/client" :as react-dom]))
 
 (defnc App
   []
@@ -13,11 +13,13 @@
       {:class (css "text-4xl")}
       "{{artifact/id}}")))
 
+(defonce root
+  (let [container (js/document.getElementById "{{artifact/id}}")]
+    (react-dom/createRoot container)))
+
 (defn start
   []
-  (react-dom/render
-   ($ App)
-   (js/document.getElementById "{{artifact/id}}")))
+  (.render root ($ App)))
 
 (defn init
   []
