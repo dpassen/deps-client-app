@@ -21,6 +21,12 @@
   []
   (.render root ($ App)))
 
+(defn add-console-tap!
+  []
+  (when js/goog.DEBUG
+    (add-tap js/console.log)))
+
 (defn init
   []
+  (add-console-tap!)
   (start))
