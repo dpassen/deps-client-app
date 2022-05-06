@@ -10,7 +10,7 @@
   "license": "ISC",
   "homepage": "",
   "devDependencies": {
-    "@testing-library/react": "^12.1.4",
+    "@testing-library/react": "^13.2.0",
     "autoprefixer": "^10.4.7",
     "cssnano": "^5.1.7",
     "http-server": "^14.1.0",
