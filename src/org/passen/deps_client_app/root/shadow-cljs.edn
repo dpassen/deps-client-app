@@ -12,9 +12,9 @@
    :asset-path "/static/js"
    :modules
    {:{{artifact/id}}
-    {:init-fn {{raw-name/ns}}.app/init}}
+    {:init-fn {{raw-name/ns}}.init/init}}
    :devtools
-   {:after-load {{raw-name/ns}}.app/start}}
+   {:after-load {{raw-name/ns}}.init/start}}
   :ci
   {:target    :karma
    :output-to "target/ci.js"}
