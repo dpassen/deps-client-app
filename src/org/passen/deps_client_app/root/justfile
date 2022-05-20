@@ -3,7 +3,8 @@ build := "{{artifact/id}}"
 default:
     @just --list
 
-release: release-cljs release-css
+release:
+    @parallel -j2 --ctag --tag --lb just ::: release-cljs release-css
 
 release-cljs:
     @npx shadow-cljs release {{ build }}
