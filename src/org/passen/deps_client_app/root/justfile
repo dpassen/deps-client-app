@@ -8,10 +8,10 @@ clean:
     @-rm -rf public/static/css
 
 release:
-    @parallel -j2 --ctag --tag --lb just ::: release-cljs release-css
+    @parallel -j2 --color --tag --lb just ::: release-cljs release-css
 
 watch:
-    @parallel -j2 --ctag --tag --lb just ::: watch-cljs watch-css
+    @parallel -j2 --color --tag --lb just ::: watch-cljs watch-css
 
 test:
     @npx shadow-cljs compile ci
