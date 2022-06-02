@@ -18,7 +18,7 @@ test:
     @npx karma start --single-run
 
 lint:
-    @clj-kondo --parallel --lint src test deps.edn shadow-cljs.edn
+    @rg -tclojure -tedn --files | xargs clj-kondo --parallel --lint
 
 preview: release
     @npx http-server

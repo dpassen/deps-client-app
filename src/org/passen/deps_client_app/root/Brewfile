@@ -8,6 +8,7 @@ tap "homebrew/core"
 brew "editorconfig"
 brew "just"
 brew "parallel"
+brew "ripgrep"
 brew "volta"
 
 brew "borkdude/brew/clj-kondo"
