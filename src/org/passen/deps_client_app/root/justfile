@@ -18,7 +18,7 @@ test:
     @npx karma start --single-run
 
 lint:
-    @clj-kondo --parallel --lint src test
+    @clj-kondo --parallel --lint src test deps.edn shadow-cljs.edn
 
 preview: release
     @npx http-server
