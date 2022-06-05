@@ -2,7 +2,7 @@
  :deps
  {binaryage/devtools  {:mvn/version "1.0.6"}
   binaryage/oops      {:mvn/version "0.7.2"}
-  girouette/girouette {:mvn/version "0.0.7"}
+  girouette/girouette {:mvn/version "0.0.8"}
   lilactown/helix     {:mvn/version "0.1.6"}}
  :aliases
  {:cljs
@@ -10,11 +10,13 @@
    {thheller/shadow-cljs {:mvn/version "2.19.1"}}}
   :girouette-processor
   {:extra-deps
-   {girouette/processor {:mvn/version "0.0.7"}}
+   {girouette/processor {:mvn/version "0.0.8"}}
    :ns-default girouette.processor
    :exec-fn    process
    :exec-args
    {:css
     {:output-file      "./public/static/css/main.css"
      :retrieval-method :annotated}
-    :color? false}}}}
+    :color?         false
+    :base-css-rules [girouette.tw.preflight/preflight-v3_0_24]
+    :garden-fn      girouette.tw.default-api/tw-v3-class-name->garden}}}}
