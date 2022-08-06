@@ -7,7 +7,7 @@
   {:root "public"}}
  :builds
  {:{{artifact/id}}
-  {:target     :browser
+  {:target     :esm
    :output-dir "public/static/js"
    :asset-path "/static/js"
    :modules
