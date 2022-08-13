@@ -1,9 +1,17 @@
 {:paths ["src" "test"]
  :deps
- {binaryage/devtools  {:mvn/version "1.0.6"}
-  binaryage/oops      {:mvn/version "0.7.2"}
-  girouette/girouette {:mvn/version "0.0.10"}
-  lilactown/helix     {:mvn/version "0.1.7"}}
+ {org.clojure/clojure
+  {:mvn/version "1.11.1"}
+  org.clojure/clojurescript
+  {:mvn/version "1.11.60"}
+  binaryage/devtools
+  {:mvn/version "1.0.6"}
+  binaryage/oops
+  {:mvn/version "0.7.2"}
+  girouette/girouette
+  {:mvn/version "0.0.10"}
+  lilactown/helix
+  {:mvn/version "0.1.7"}}
  :aliases
  {:cljs
   {:extra-deps
