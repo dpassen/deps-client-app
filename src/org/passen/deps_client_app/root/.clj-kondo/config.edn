@@ -1,3 +1,0 @@
-{:linters
- {:clojure-lsp/unused-public-var
-  {:exclude #{{{raw-name/ns}}.init/init}}}}
