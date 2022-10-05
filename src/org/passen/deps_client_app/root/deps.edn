@@ -11,7 +11,7 @@
   girouette/girouette
   {:mvn/version "0.0.10"}
   lilactown/helix
-  {:mvn/version "0.1.8"}}
+  {:mvn/version "0.1.9"}}
  :aliases
  {:cljs
   {:extra-deps
