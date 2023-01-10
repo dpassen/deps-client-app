@@ -2,6 +2,8 @@ version: "3"
 
 silent: true
 
+output: prefixed
+
 vars:
   BUILD: "{{artifact/id}}"
 
@@ -13,9 +15,9 @@ tasks:
 
   clean:
     desc: Remove generated JS and CSS
-    cmds:
-      - rm -rf public/static/js
-      - rm -rf public/static/css
+    deps:
+      - cljs:clean
+      - css:clean
 
   release:
     desc: Generate production JS and CSS
@@ -55,6 +57,11 @@ tasks:
     cmds:
       - npx shadow-cljs watch {{.BUILD}}
 
+  cljs:clean:
+    desc: Remove generated JS
+    cmds:
+      - rm -rf public/static/js
+
   css:release:
     desc: Generate production CSS
     cmds:
@@ -65,3 +72,8 @@ tasks:
     desc: Watch source files and generate development CSS
     cmds:
       - clojure -X:girouette-processor :watch? true
+
+  css:clean:
+    desc: Remove generated CSS
+    cmds:
+      - rm -rf public/static/css
