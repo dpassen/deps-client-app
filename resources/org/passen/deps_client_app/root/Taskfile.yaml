@@ -19,11 +19,15 @@ tasks:
 
   release:
     desc: Generate production JS and CSS
-    deps: [release-cljs, release-css]
+    deps:
+      - cljs:release
+      - css:release
 
   watch:
     desc: Watch source files and generate development JS and CSS
-    deps: [watch-cljs, watch-css]
+    deps:
+      - cljs:watch
+      - css:watch
 
   lint:
     desc: Lint code using clj-kondo
@@ -41,23 +45,23 @@ tasks:
     cmds:
       - npx shadow-cljs run shadow.cljs.build-report {{.BUILD}} report.html
 
-  release-cljs:
+  cljs:release:
     desc: Generate production JS
     cmds:
       - npx shadow-cljs release {{.BUILD}}
 
-  watch-cljs:
+  cljs:watch:
     desc: Watch source files and generate development JS
     cmds:
       - npx shadow-cljs watch {{.BUILD}}
 
-  release-css:
+  css:release:
     desc: Generate production CSS
     cmds:
       - clojure -X:girouette-processor
       - npx postcss -r public/static/css/main.css
 
-  watch-css:
+  css:watch:
     desc: Watch source files and generate development CSS
     cmds:
       - clojure -X:girouette-processor :watch? true
