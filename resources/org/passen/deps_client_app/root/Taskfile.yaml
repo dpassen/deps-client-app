@@ -9,9 +9,8 @@ vars:
 
 tasks:
   default:
-    desc: List all tasks
     cmds:
-      - task --list-all
+      - task --list
 
   clean:
     desc: Remove generated JS and CSS
