@@ -44,6 +44,11 @@ tasks:
     cmds:
       - npx shadow-cljs run shadow.cljs.build-report {{.BUILD}} report.html
 
+  cljs:clean:
+    desc: Remove generated JS
+    cmds:
+      - rm -rf public/static/js
+
   cljs:release:
     desc: Generate production JS
     cmds:
@@ -54,10 +59,10 @@ tasks:
     cmds:
       - npx shadow-cljs watch {{.BUILD}}
 
-  cljs:clean:
-    desc: Remove generated JS
+  css:clean:
+    desc: Remove generated CSS
     cmds:
-      - rm -rf public/static/js
+      - rm -rf public/static/css
 
   css:release:
     desc: Generate production CSS
@@ -69,8 +74,3 @@ tasks:
     desc: Watch source files and generate development CSS
     cmds:
       - clojure -X:girouette-processor :watch? true
-
-  css:clean:
-    desc: Remove generated CSS
-    cmds:
-      - rm -rf public/static/css
