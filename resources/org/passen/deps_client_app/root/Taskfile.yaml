@@ -39,7 +39,7 @@ tasks:
     cmds:
       - npx http-server
 
-  build-report:
+  report:
     desc: Generate shadow-cljs build report
     cmds:
       - npx shadow-cljs run shadow.cljs.build-report {{.BUILD}} report.html
