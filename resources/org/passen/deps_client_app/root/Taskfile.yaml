@@ -16,6 +16,12 @@ tasks:
       - cljs:clean
       - css:clean
 
+  test:
+    desc: Run unit tests
+    cmds:
+      - npx shadow-cljs compile ci
+      - npx karma start --single-run
+
   release:
     desc: Generate production JS and CSS
     deps:
