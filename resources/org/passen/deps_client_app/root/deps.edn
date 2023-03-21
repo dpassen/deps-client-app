@@ -11,11 +11,11 @@
   girouette/girouette
   {:mvn/version "0.0.10"}
   lilactown/helix
-  {:mvn/version "0.1.9"}}
+  {:mvn/version "0.1.10"}}
  :aliases
  {:cljs
   {:extra-deps
-   {thheller/shadow-cljs {:mvn/version "2.22.5"}}}
+   {thheller/shadow-cljs {:mvn/version "2.22.6"}}}
   :girouette-processor
   {:extra-deps
    {girouette/processor {:mvn/version "0.0.8"}}
