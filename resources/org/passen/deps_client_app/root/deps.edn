@@ -5,7 +5,7 @@
   org.clojure/clojurescript
   {:mvn/version "1.11.60"}
   binaryage/devtools
-  {:mvn/version "1.0.6"}
+  {:mvn/version "1.0.7"}
   binaryage/oops
   {:mvn/version "0.7.2"}
   girouette/girouette
@@ -15,7 +15,7 @@
  :aliases
  {:cljs
   {:extra-deps
-   {thheller/shadow-cljs {:mvn/version "2.22.9"}}}
+   {thheller/shadow-cljs {:mvn/version "2.22.10"}}}
   :girouette-processor
   {:extra-deps
    {girouette/processor {:mvn/version "0.0.8"}}
