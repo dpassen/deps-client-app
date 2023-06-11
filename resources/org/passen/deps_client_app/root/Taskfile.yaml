@@ -7,8 +7,7 @@ vars:
 
 tasks:
   default:
-    cmds:
-      - task --list
+    cmd: task --list
 
   clean:
     desc: Remove generated JS and CSS
@@ -36,39 +35,32 @@ tasks:
 
   lint:
     desc: Lint code using clj-kondo
-    cmds:
-      - rg -tclojure -tedn --files | xargs clj-kondo --parallel --lint
+    cmd: rg -tclojure -tedn --files | xargs clj-kondo --parallel --lint
 
   preview:
     desc: Serve production JS and CSS in a local webserver
     deps: [release]
-    cmds:
-      - npx http-server
+    cmd: npx http-server
 
   report:
     desc: Generate shadow-cljs build report
-    cmds:
-      - npx shadow-cljs run shadow.cljs.build-report {{.BUILD}} report.html
+    cmd: npx shadow-cljs run shadow.cljs.build-report {{.BUILD}} report.html
 
   cljs:clean:
     desc: Remove generated JS
-    cmds:
-      - rm -rf public/static/js
+    cmd: rm -rf public/static/js
 
   cljs:release:
     desc: Generate production JS
-    cmds:
-      - npx shadow-cljs release {{.BUILD}}
+    cmd: npx shadow-cljs release {{.BUILD}}
 
   cljs:watch:
     desc: Watch source files and generate development JS
-    cmds:
-      - npx shadow-cljs watch {{.BUILD}}
+    cmd: npx shadow-cljs watch {{.BUILD}}
 
   css:clean:
     desc: Remove generated CSS
-    cmds:
-      - rm -rf public/static/css
+    cmd: rm -rf public/static/css
 
   css:release:
     desc: Generate production CSS
@@ -78,5 +70,4 @@ tasks:
 
   css:watch:
     desc: Watch source files and generate development CSS
-    cmds:
-      - clojure -X:girouette-processor :watch? true
+    cmd: clojure -X:girouette-processor :watch? true
