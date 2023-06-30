@@ -3,15 +3,16 @@
    ["react" :as react]
    ["react-dom/client" :as react-dom]
    [helix.core :refer [$]]
+   [oops.core :as oops]
    [{{raw-name/ns}}.app :as app]))
 
 (defonce root
-  (let [container (js/document.getElementById "{{artifact/id}}")]
+  (let [container (oops/ocall js/document :getElementById "{{artifact/id}}")]
     (react-dom/createRoot container)))
 
 (defn start
   []
-  (.render root ($ react/StrictMode ($ app/App))))
+  (oops/ocall root :render ($ react/StrictMode ($ app/App))))
 
 (defn add-console-tap!
   [debug?]
