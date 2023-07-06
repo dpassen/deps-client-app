@@ -15,11 +15,11 @@
   (oops/ocall root :render ($ react/StrictMode ($ app/App))))
 
 (defn add-console-tap!
-  [debug?]
-  (when debug?
+  []
+  (when ^boolean goog.DEBUG
     (add-tap js/console.log)))
 
 (defn init
   []
-  (add-console-tap! goog.DEBUG)
+  (add-console-tap!)
   (start))
