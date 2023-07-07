@@ -14,12 +14,8 @@
   []
   (oops/ocall root :render ($ react/StrictMode ($ app/App))))
 
-(defn add-console-tap!
-  []
-  (when ^boolean goog.DEBUG
-    (add-tap js/console.log)))
-
 (defn init
   []
-  (add-console-tap!)
+  (when ^boolean goog.DEBUG
+    (add-tap js/console.log))
   (start))
