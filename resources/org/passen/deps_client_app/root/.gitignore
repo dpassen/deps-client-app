@@ -12,4 +12,4 @@ public/static/js/cljs-runtime
 public/static/js/manifest.edn
 .cache/
 .cpcache/
-/target/
+.task/

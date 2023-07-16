@@ -53,6 +53,13 @@ tasks:
   cljs:release:
     desc: Generate production JS
     cmd: npx shadow-cljs release {{.BUILD}}
+    sources:
+      - deps.edn
+      - package-lock.json
+      - shadow-cljs.edn
+      - src/**/*.cljs
+    generates:
+      - public/static/js/{{.BUILD}}.js
 
   cljs:watch:
     desc: Watch source files and generate development JS
@@ -67,6 +74,12 @@ tasks:
     cmds:
       - clojure -X:girouette-processor
       - npx postcss -r public/static/css/main.css
+    sources:
+      - deps.edn
+      - package-lock.edn
+      - src/**/*.cljs
+    generates:
+      - public/static/css/main.css
 
   css:watch:
     desc: Watch source files and generate development CSS
