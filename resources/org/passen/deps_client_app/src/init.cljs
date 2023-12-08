@@ -1,18 +1,19 @@
 (ns {{raw-name/ns}}.init
   (:require
    ["react" :as react]
-   ["react-dom/client" :as react-dom]
-   [helix.core :refer [$]]
-   [oops.core :as oops]
-   [{{raw-name/ns}}.app :as app]))
+   [{{raw-name/ns}}.app :as app]
+   [uix.core :refer [$]]
+   [uix.dom]))
 
 (defonce root
-  (let [container (oops/ocall js/document :getElementById "{{artifact/id}}")]
-    (react-dom/createRoot container)))
+  (let [container (js/document.getElementById "{{artifact/id}}")]
+    (uix.dom/create-root container)))
 
 (defn start
   []
-  (oops/ocall root :render ($ react/StrictMode ($ app/App))))
+  (uix.dom/render-root
+   ($ react/StrictMode ($ app/app))
+   root))
 
 (defn init
   []

@@ -1,11 +1,8 @@
 (ns {{raw-name/ns}}.app
   (:require
-   [girouette.core :refer [css]]
-   [helix.core :refer [defnc]]
-   [helix.dom :as dom]))
+   [uix.core :refer [defui $]]))
 
-(defnc App
+(defui app
   []
-  (dom/div
-   {:class (css "text-4xl")}
-   "{{artifact/id}}"))
+  ($ :div.text-4xl
+    "{{artifact/id}}"))
