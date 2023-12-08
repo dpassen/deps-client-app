@@ -1,10 +1,10 @@
 (ns {{raw-name/ns}}.app-test
   (:require
+   ["@testing-library/react" :as react-testing-library]
    [clojure.test :refer [deftest is testing use-fixtures]]
    [oops.core :as oops]
    [{{raw-name/ns}}.app :as app]
-   [uix.core :refer [$]]
-   ["@testing-library/react" :as react-testing-library]))
+   [uix.core :refer [$]]))
 
 (use-fixtures :each {:after react-testing-library/cleanup})
 
