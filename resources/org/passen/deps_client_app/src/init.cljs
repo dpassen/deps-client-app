@@ -1,8 +1,7 @@
 (ns {{raw-name/ns}}.init
   (:require
-   ["react" :as react]
    [{{raw-name/ns}}.app :as app]
-   [uix.core :refer [$]]
+   [uix.core :as uix :refer [$]]
    [uix.dom]))
 
 (defonce root
@@ -12,7 +11,8 @@
 (defn start
   []
   (uix.dom/render-root
-   ($ react/StrictMode ($ app/app))
+   ($ uix/strict-mode
+     ($ app/app))
    root))
 
 (defn init
