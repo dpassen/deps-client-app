@@ -11,7 +11,7 @@
   "homepage": "",
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.17",
     "cssnano": "^6.0.3",
     "http-server": "^14.1.1",
     "jsdom": "^23.0.1",
