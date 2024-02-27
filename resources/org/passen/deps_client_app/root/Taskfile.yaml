@@ -72,15 +72,15 @@ tasks:
   css:release:
     desc: Generate production CSS
     cmds:
-      - clojure -X:girouette-processor
-      - npx postcss -r public/static/css/main.css
+      - npx postcss static/css/main.css -o public/static/css/main.css
     sources:
       - deps.edn
       - package-lock.edn
       - src/**/*.cljs
+      - static/css/main.css
     generates:
       - public/static/css/main.css
 
   css:watch:
     desc: Watch source files and generate development CSS
-    cmd: clojure -X:girouette-processor :watch? true
+    cmd: npx postcss static/css/main.css -w -o public/static/css/main.css --verbose

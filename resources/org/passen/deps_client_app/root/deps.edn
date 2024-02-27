@@ -18,16 +18,4 @@
   {:extra-paths ["dev"]
    :extra-deps
    {binaryage/devtools
-    {:mvn/version "1.0.7"}}}
-  :girouette-processor
-  {:extra-deps
-   {girouette/processor {:mvn/version "0.0.8"}}
-   :ns-default girouette.processor
-   :exec-fn    process
-   :exec-args
-   {:css
-    {:output-file      "./public/static/css/main.css"
-     :retrieval-method :comprehensive}
-    :color?         false
-    :base-css-rules [girouette.tw.preflight/preflight-v3_0_24]
-    :garden-fn      girouette.tw.default-api/tw-v3-class-name->garden}}}}
+    {:mvn/version "1.0.7"}}}}}
