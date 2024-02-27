@@ -71,8 +71,7 @@ tasks:
 
   css:release:
     desc: Generate production CSS
-    cmds:
-      - npx postcss static/css/main.css -o public/static/css/main.css
+    cmd: npx postcss static/css/main.css -o public/static/css/main.css
     sources:
       - deps.edn
       - package-lock.edn
