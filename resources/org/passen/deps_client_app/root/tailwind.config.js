@@ -4,7 +4,7 @@ const { scanClojure } = require("@multiplyco/tailwind-clj");
 
 module.exports = {
     content: {
-        files: ["./src/**/*.{clj,cljs,cljc}"],
+        files: ["./src/**/*.{clj,cljs,cljc}", "./public/index.html"],
     },
     extract: {
         clj: scanClojure,
