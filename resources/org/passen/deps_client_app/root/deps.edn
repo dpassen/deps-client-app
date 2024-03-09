@@ -1,7 +1,7 @@
 {:paths ["src" "test"]
  :deps
  {org.clojure/clojure
-  {:mvn/version "1.11.1"}
+  {:mvn/version "1.11.2"}
   org.clojure/clojurescript
   {:mvn/version "1.11.132"}
   binaryage/oops
