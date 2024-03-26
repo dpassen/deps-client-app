@@ -13,7 +13,7 @@
     "@multiplyco/tailwind-clj": "^1.0.3",
     "@testing-library/react": "^14.0.0",
     "autoprefixer": "^10.4.19",
-    "cssnano": "^6.1.1",
+    "cssnano": "^6.1.2",
     "http-server": "^14.1.1",
     "jsdom": "^23.0.1",
     "karma": "^6.4.1",
