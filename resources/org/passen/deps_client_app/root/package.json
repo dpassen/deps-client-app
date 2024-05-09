@@ -21,7 +21,7 @@
     "karma-jsdom-launcher": "^16.0.0",
     "postcss-cli": "^11.0.0",
     "react-refresh": "^0.14.2",
-    "shadow-cljs": "^2.28.5",
+    "shadow-cljs": "^2.28.6",
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
