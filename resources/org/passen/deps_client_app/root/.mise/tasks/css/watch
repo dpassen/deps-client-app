@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# mise description="Watch source files and generate development CSS"
+
+set -o nounset
+set -o errexit
+set -o pipefail
+
+watch () {
+    npx postcss static/css/main.css -w -o public/static/css/main.css --verbose
+}
+
+watch

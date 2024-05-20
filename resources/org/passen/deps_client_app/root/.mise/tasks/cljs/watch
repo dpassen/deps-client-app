@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# mise description="Watch source files and generate development JS"
+
+set -o nounset
+set -o errexit
+set -o pipefail
+
+watch () {
+    npx shadow-cljs watch {{artifact/id}}
+}
+
+watch

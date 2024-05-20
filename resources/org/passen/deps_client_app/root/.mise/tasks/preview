@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# mise description="Serve production JS and CSS in a local webserver"
+# mise depends=["release"]
+
+set -o nounset
+set -o errexit
+set -o pipefail
+
+preview () {
+    npx http-server
+}
+
+preview

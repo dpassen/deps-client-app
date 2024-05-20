@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# mise description="Generate shadow-cljs build report"
+
+set -o nounset
+set -o errexit
+set -o pipefail
+
+report () {
+    npx shadow-cljs run shadow.cljs.build-report {{artifact/id}} report.html
+}
+
+report

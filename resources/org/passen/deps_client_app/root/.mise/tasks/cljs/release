@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# mise description="Generate production JS"
+# mise sources=["deps.edn", "package-lock.json", "shadow-cljs.edn", "src/**/*.cljs"]
+# mise outputs=["public/static/js/{{artifact/id}}.js"]
+
+set -o nounset
+set -o errexit
+set -o pipefail
+
+release () {
+    npx shadow-cljs release {{artifact/id}}
+}
+
+release

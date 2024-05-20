@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# mise description="Push to gh-pages branch"
+
+set -o nounset
+set -o errexit
+set -o pipefail
+
+publish () {
+    git subtree push --prefix public origin gh-pages
+}
+
+publish
