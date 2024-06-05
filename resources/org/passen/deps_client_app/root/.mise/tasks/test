@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# mise description="Run unit tests"
+
+set -o nounset
+set -o errexit
+set -o pipefail
+
+test () {
+    npx shadow-cljs compile ci
+    npx karma start --single-run
+}
+
+test
