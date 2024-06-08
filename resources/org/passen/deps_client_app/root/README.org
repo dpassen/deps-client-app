@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+* {{artifact/id}}
+{{description}}
+** Usage
+*** Development
+Start the app in development mode:
+#+BEGIN_SRC sh
+  mise run watch
+#+END_SRC
+*** Tests
+Run the tests on the CLI:
+#+BEGIN_SRC sh
+  mise run test
+#+END_SRC
+*** Linting
+To lint the project:
+#+BEGIN_SRC
+  mise run lint
+#+END_SRC
+*** Build Report
+#+BEGIN_SRC
+  mise run report
+#+END_SRC
+*** Release
+Build the production assets:
+#+BEGIN_SRC
+  mise run release
+#+END_SRC
+*** Preview
+Preview the production build in a local webserver:
+#+BEGIN_SRC
+  mise run preview
+#+END_SRC
