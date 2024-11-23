@@ -14,7 +14,7 @@
    {:{{artifact/id}}
     {:init-fn {{raw-name/ns}}.init/init}}
    :devtools
-   {:preloads [uix.preload devtools.preload]}}
+   {:preloads [preload uix.preload devtools.preload]}}
   :ci
   {:target    :karma
    :output-to "target/ci.js"}
