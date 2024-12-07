@@ -5,8 +5,8 @@
    [uix.dom]))
 
 (defonce root
-  (let [container (js/document.getElementById "{{artifact/id}}")]
-    (uix.dom/create-root container)))
+  (let [element (js/document.getElementById "{{artifact/id}}")]
+    (uix.dom/create-root element)))
 
 (defn start
   []
