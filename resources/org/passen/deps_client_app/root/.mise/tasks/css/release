@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# mise description="Generate production CSS"
-# mise sources=["deps.edn", "package-lock.json", "src/**/*.cljs", "static/css/main.css"]
-# mise outputs=["public/static/css/main.css"]
+#MISE description="Generate production CSS"
+#MISE sources=["deps.edn", "package-lock.json", "src/**/*.cljs", "static/css/main.css"]
+#MISE outputs=["public/static/css/main.css"]
 
 set -o nounset
 set -o errexit

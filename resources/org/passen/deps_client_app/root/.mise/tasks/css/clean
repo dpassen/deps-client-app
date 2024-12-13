@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# mise description="Remove generated CSS"
+#MISE description="Remove generated CSS"
 
 set -o nounset
 set -o errexit

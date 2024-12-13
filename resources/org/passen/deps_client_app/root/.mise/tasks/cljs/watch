@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# mise description="Watch source files and generate development JS"
+#MISE description="Watch source files and generate development JS"
 
 set -o nounset
 set -o errexit

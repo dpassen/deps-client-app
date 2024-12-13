@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# mise description="Generate production JS"
-# mise sources=["deps.edn", "package-lock.json", "shadow-cljs.edn", "src/**/*.cljs"]
-# mise outputs=["public/static/js/{{artifact/id}}.js"]
+#MISE description="Generate production JS"
+#MISE sources=["deps.edn", "package-lock.json", "shadow-cljs.edn", "src/**/*.cljs"]
+#MISE outputs=["public/static/js/{{artifact/id}}.js"]
 
 set -o nounset
 set -o errexit

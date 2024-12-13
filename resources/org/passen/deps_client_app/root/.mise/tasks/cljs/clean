@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# mise description="Remove generated JS"
+#MISE description="Remove generated JS"
 
 set -o nounset
 set -o errexit

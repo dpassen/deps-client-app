@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# mise description="Serve production JS and CSS in a local webserver"
-# mise depends=["release"]
+#MISE description="Serve production JS and CSS in a local webserver"
+#MISE depends=["release"]
 
 set -o nounset
 set -o errexit

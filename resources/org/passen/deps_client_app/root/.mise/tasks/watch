@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# mise description="Watch source files and generate development JS and CSS"
-# mise depends=["cljs:watch", "css:watch"]
+#MISE description="Watch source files and generate development JS and CSS"
+#MISE depends=["cljs:watch", "css:watch"]
 
 set -o nounset
 set -o errexit

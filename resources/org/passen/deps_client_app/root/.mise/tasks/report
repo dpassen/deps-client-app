@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# mise description="Generate shadow-cljs build report"
+#MISE description="Generate shadow-cljs build report"
 
 set -o nounset
 set -o errexit

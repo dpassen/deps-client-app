@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# mise description="Watch source files and generate development CSS"
+#MISE description="Watch source files and generate development CSS"
 
 set -o nounset
 set -o errexit
