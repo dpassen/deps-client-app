@@ -2,7 +2,8 @@
 
 module.exports = {
     plugins: {
-        tailwindcss: {},
+        "@tailwindcss/postcss": {},
+        "postcss-prune-var": {},
         autoprefixer: {},
         cssnano: {
             preset: "default",
