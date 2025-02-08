@@ -10,7 +10,7 @@
   "license": "ISC",
   "homepage": "",
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.0.3",
+    "@tailwindcss/postcss": "^4.0.4",
     "@testing-library/react": "^16.0.0",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.5",
@@ -23,7 +23,7 @@
     "postcss-prune-var": "^1.1.2",
     "react-refresh": "^0.16.0",
     "shadow-cljs": "^2.28.20",
-    "tailwindcss": "^4.0.3"
+    "tailwindcss": "^4.0.4"
   },
   "dependencies": {
     "react": "^19.0.0",
