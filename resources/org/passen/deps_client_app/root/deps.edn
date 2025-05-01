@@ -3,7 +3,7 @@
  {org.clojure/clojure
   {:mvn/version "1.12.0"}
   org.clojure/clojurescript
-  {:mvn/version "1.11.132"}
+  {:mvn/version "1.12.38"}
   binaryage/oops
   {:mvn/version "0.7.2"}
   com.pitch/uix.core
@@ -13,7 +13,7 @@
  :aliases
  {:cljs
   {:extra-deps
-   {thheller/shadow-cljs {:mvn/version "2.28.23"}}}
+   {thheller/shadow-cljs {:mvn/version "3.0.4"}}}
   :dev
   {:extra-paths ["dev"]
    :extra-deps
