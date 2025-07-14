@@ -1,0 +1,44 @@
+build := "{{artifact/id}}"
+
+default:
+    @just --list
+
+[parallel]
+clean: clean-cljs clean-css
+
+[parallel]
+release: release-cljs release-css
+
+[parallel]
+watch: watch-cljs watch-css
+
+lint:
+    @rg -tclojure -tedn --files | xargs clj-kondo --parallel --lint
+
+preview: release
+    @npx http-server
+
+test:
+    @npx shadow-cljs compile ci
+    @npx karma start --single-run
+
+build-report:
+    @npx shadow-cljs run shadow.cljs.build-report {{ build }} report.html
+
+clean-cljs:
+    @-rm -rf public/static/js
+
+clean-css:
+    @-rm -rf public/static/css
+
+release-cljs:
+    @npx shadow-cljs release {{ build }}
+
+release-css:
+    @npx postcss static/css/main.css -o public/static/css/main.css --verbose
+
+watch-cljs:
+    @npx shadow-cljs watch {{ build }}
+
+watch-css:
+    @npx postcss static/css/main.css -w -o public/static/css/main.css --verbose

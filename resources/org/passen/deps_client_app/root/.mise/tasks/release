@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-#MISE description="Generate production JS and CSS"
-#MISE depends=["cljs:release", "css:release"]
-
-set -o nounset
-set -o errexit
-set -o pipefail

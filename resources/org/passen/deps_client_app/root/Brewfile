@@ -3,6 +3,7 @@ tap "clojure/tools"
 tap "homebrew/bundle"
 
 brew "editorconfig"
+brew "just"
 brew "mise"
 brew "ripgrep"
 

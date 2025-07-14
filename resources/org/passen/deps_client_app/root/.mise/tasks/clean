@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-#MISE description="Remove generated JS and CSS"
-#MISE depends=["cljs:clean", "css:clean"]
-
-set -o nounset
-set -o errexit
-set -o pipefail

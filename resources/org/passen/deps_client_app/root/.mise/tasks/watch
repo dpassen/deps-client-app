@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-#MISE description="Watch source files and generate development JS and CSS"
-#MISE depends=["cljs:watch", "css:watch"]
-
-set -o nounset
-set -o errexit
-set -o pipefail
