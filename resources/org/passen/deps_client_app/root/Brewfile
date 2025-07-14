@@ -1,13 +1,14 @@
-tap "borkdude/brew"
-tap "clojure/tools"
-tap "homebrew/bundle"
+# frozen_string_literal: true
 
-brew "editorconfig"
-brew "just"
-brew "mise"
-brew "ripgrep"
+tap 'borkdude/brew'
+tap 'clojure/tools'
 
-brew "borkdude/brew/clj-kondo"
-brew "clojure/tools/clojure"
+brew 'editorconfig'
+brew 'just'
+brew 'mise'
+brew 'ripgrep'
 
-cask "temurin@17"
+brew 'borkdude/brew/clj-kondo'
+brew 'clojure/tools/clojure'
+
+cask 'temurin@21'
