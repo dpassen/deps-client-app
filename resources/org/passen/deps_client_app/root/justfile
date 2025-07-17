@@ -1,44 +1,64 @@
 build := "{{artifact/id}}"
 
+[private]
 default:
     @just --list
 
+# Remove generated JS and CSS
 [parallel]
 clean: clean-cljs clean-css
 
+# Generate production JS and CSS
 [parallel]
 release: release-cljs release-css
 
+# Watch source files and generate development JS and CSS
 [parallel]
 watch: watch-cljs watch-css
 
+# Lint code using clj-kondo
 lint:
     @rg -tclojure -tedn --files | xargs clj-kondo --parallel --lint
 
+# Serve production JS and CSS in a local webserver
 preview: release
     @npx http-server
 
+# Compile and run unit tests
 test:
     @npx shadow-cljs compile ci
     @npx karma start --single-run
 
+# Generate shadow-cljs build report
 build-report:
     @npx shadow-cljs run shadow.cljs.build-report {{ build }} report.html
 
+# Remove generated JS
+[private]
 clean-cljs:
     @-rm -rf public/static/js
 
+# Remove generated CSS
+[private]
 clean-css:
     @-rm -rf public/static/css
 
+# Generate production JS
+[private]
 release-cljs:
     @npx shadow-cljs release {{ build }}
 
+# Generate production CSS
+[private]
 release-css:
     @npx postcss static/css/main.css -o public/static/css/main.css --verbose
 
+# Watch source files and generate development JS
+[private]
 watch-cljs:
     @npx shadow-cljs watch {{ build }}
 
+# Watch source files and generate development CSS
+[private]
 watch-css:
     @npx postcss static/css/main.css -w -o public/static/css/main.css --verbose
