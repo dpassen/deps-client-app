@@ -1,7 +1,7 @@
 build := "{{artifact/id}}"
 
-[private]
-default:
+[default, private]
+commands:
     @just --list
 
 # Remove generated JS and CSS
