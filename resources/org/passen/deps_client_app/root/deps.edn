@@ -20,4 +20,4 @@
    {binaryage/devtools
     {:mvn/version "1.0.7"}
     com.github.roman01la/cljs-react-devtools
-    {:mvn/version "0.2.0"}}}}}
+    {:mvn/version "0.2.1"}}}}}
