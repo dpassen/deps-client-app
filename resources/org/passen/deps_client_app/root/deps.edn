@@ -13,7 +13,7 @@
  :aliases
  {:cljs
   {:extra-deps
-   {thheller/shadow-cljs {:mvn/version "3.3.2"}}}
+   {thheller/shadow-cljs {:mvn/version "3.3.3"}}}
   :dev
   {:extra-paths ["dev"]
    :extra-deps
