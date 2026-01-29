@@ -7,9 +7,9 @@
   binaryage/oops
   {:mvn/version "0.7.2"}
   com.pitch/uix.core
-  {:mvn/version "1.4.8"}
+  {:mvn/version "1.4.9"}
   com.pitch/uix.dom
-  {:mvn/version "1.4.8"}}
+  {:mvn/version "1.4.9"}}
  :aliases
  {:cljs
   {:extra-deps
