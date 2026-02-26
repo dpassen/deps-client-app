@@ -10,9 +10,9 @@
   "license": "ISC",
   "homepage": "",
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.0",
+    "@tailwindcss/postcss": "^4.2.1",
     "@testing-library/react": "^16.0.0",
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.4.27",
     "cssnano": "^7.1.2",
     "http-server": "^14.1.1",
     "jsdom": "^24.1.0",
@@ -22,7 +22,7 @@
     "postcss-cli": "^11.0.1",
     "react-refresh": "^0.18.0",
     "shadow-cljs": "^3.3.6",
-    "tailwindcss": "^4.2.0"
+    "tailwindcss": "^4.2.1"
   },
   "dependencies": {
     "process": "^0.11.10",
