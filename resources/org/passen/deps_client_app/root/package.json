@@ -13,7 +13,7 @@
     "@tailwindcss/postcss": "^4.2.2",
     "@testing-library/react": "^16.0.0",
     "autoprefixer": "^10.4.27",
-    "cssnano": "^7.1.3",
+    "cssnano": "^7.1.4",
     "http-server": "^14.1.1",
     "jsdom": "^24.1.0",
     "karma": "^6.4.1",
@@ -21,7 +21,7 @@
     "karma-jsdom-launcher": "^17.0.0",
     "postcss-cli": "^11.0.1",
     "react-refresh": "^0.18.0",
-    "shadow-cljs": "^3.3.6",
+    "shadow-cljs": "^3.3.8",
     "tailwindcss": "^4.2.2"
   },
   "dependencies": {
